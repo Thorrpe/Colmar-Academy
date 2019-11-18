@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "ubuntu";
+  src: url("D:/Thorrpe/Web/GitHub/Colmar-Academy/Fuentes/Ubuntu-Regular.ttf") format('truetype');
+}
+
+body {
+  font-family: "ubuntu", Helvetica, sans-serif;
+  background-color: white;
+  margin: 0;
+}
+
+/* ENCABEZADO */
+
+header {
+  box-sizing: border-box;
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-size: 22px;
+}
+
+.logo p {
+  margin: 0;
+}
+
+span {
+  color: hsl(0, 0%, 20%);
+  letter-spacing: 2;
+  font-weight: 600;
+}
+
+img {
+  padding-top: 6px;
+  margin-left: 24px;
+  height: 90%;
+  min-width: 47.078px;
+}
+
+nav {
+  display: inline-flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding-right: 24px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding-left: 16px;
+  font-size: 19px;
+}
