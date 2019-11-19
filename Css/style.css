@@ -1,27 +1,34 @@
-@font-face {
+@font-face { /* Fuente */
   font-family: "ubuntu";
   src: url("D:/Thorrpe/Web/GitHub/Colmar-Academy/Fuentes/Ubuntu-Regular.ttf") format('truetype');
 }
 
-body {
+body { /* Cuerpo */
   font-family: "ubuntu", Helvetica, sans-serif;
   background-color: white;
-  margin: 0;
+  margin: 0 300px;
 }
 
 /* ENCABEZADO */
 
-header {
+header { /* Contenedor de Encabezado */
+  border-bottom: 1px solid hsl(0, 0%, 72%);
+  border-left: 1px solid hsl(0, 0%, 72%);
+  border-right: 1px solid hsl(0, 0%, 72%);
+  background-color: white;
   box-sizing: border-box;
   height: 64px;
-  width: 100%;
+  width: auto;
   position: fixed;
   top: 0;
+  left: 300px;
+  right: 300px;
   display: flex;
   align-items: center;
+  z-index: 2;
 }
 
-.logo {
+.logo { /* Contenedor Logo y Nombre */
   height: 32px;
   display: flex;
   align-items: center;
@@ -29,33 +36,96 @@ header {
   font-size: 22px;
 }
 
-.logo p {
+.logo p { /* Texto: COLMARACADEMY */
   margin: 0;
 }
 
-span {
+span { /* Texto: COLMAR */
   color: hsl(0, 0%, 20%);
   letter-spacing: 2;
   font-weight: 600;
 }
 
-img {
+img { /* Logo de Colmar */
   padding-top: 6px;
   margin-left: 24px;
   height: 90%;
   min-width: 47.078px;
 }
 
-nav {
+nav { /* Navegador de la Página */
   display: inline-flex;
   flex-grow: 1;
   justify-content: flex-end;
   padding-right: 24px;
 }
 
-a {
+.enlaces { /* Enlaces del Navegador */
   color: black;
   text-decoration: none;
   padding-left: 16px;
   font-size: 19px;
+}
+
+/* APREDNDIZAJE */
+
+.learn { /* Contenedor de Aprendizaje */
+  position: relative;
+  top: 64px;
+  display: flex;
+  background-color: hsl(0, 0%, 72%);
+  z-index: 1;
+}
+
+.learn img { /* Imágen de Aprendizaje */
+  display: flex;
+  width: 60%;
+  margin: 32px 24px;
+  padding: 0;
+}
+
+.bottom { /* Contenedor de Título, Subtítulo y Botón */
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: hsl(0, 0%, 27%);
+  width: 310px;
+  margin-bottom: 60px;
+}
+
+.bottom h1 { /* Título */
+  font-size: 40px;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.bottom h3 { /* Subtítulo */
+  font-size: 20px;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.boton { /* Contenedor de Botón */
+  border: 1px solid hsl(0, 0%, 27%);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0, 0%, 27%);
+  margin-top: 25px;
+}
+
+#boton { /* Botón */
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+#boton:hover { /* Botón con puntero */
+  border-radius: 5px;
+  background-color: white;
+  color: hsl(0, 0%, 27%);
 }
