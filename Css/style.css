@@ -143,6 +143,7 @@ nav { /* Navegador de la Página */
 
 /* ON CAMPUS ----------------------------------------------------------------*/
 
+
 #oncampus { /* Contenedor de On Campus */
   display: flex;
   z-index: 1;
@@ -255,4 +256,84 @@ nav { /* Navegador de la Página */
   margin: 0;
   text-decoration: none;
   color: blue;
+}
+
+/* ONLINE --------------------------------------------------------------------*/
+
+#online { /* Contenedor Principal */
+  display: inline-flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 92%);
+  color: hsl(0, 0%, 27%);
+  margin: 0;
+  padding: 32px 72px;
+  z-index: 1;
+}
+
+#online h1 { /* Titulo Principal */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.cont1 { /* Contenedor 1 */
+  display: inline-flex;
+  margin-top: 32px;
+}
+
+.cont2 { /* Contenedor 2 */
+  display: inline-flex;
+  margin-top: 32px;
+}
+
+.cursos { /* Cursos */
+  display: inline-flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding: 0;
+  margin: 0 32px 0 0;
+}
+
+.cursos img { /* Imagenes de Cursos */
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#margin { /* Margen de Cursos que esta al final */
+  margin-right: 0;
+}
+
+.textcurso { /* Texto debajo de foto en Cursos */
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 16px 16px 24px 16px;
+  height: 100%;
+}
+
+.textcurso h1, .textcurso h2, .textcurso p {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.textcurso h1 { /* Titulo Cursos */
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+#courses { /* Subtitulo Cursos */
+  font-size: 15px;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.textcurso p { /* Parrafo Cursos */
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
 }
