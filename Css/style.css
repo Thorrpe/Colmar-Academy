@@ -143,8 +143,12 @@ nav { /* Navegador de la Página */
 
 /* ON CAMPUS ----------------------------------------------------------------*/
 
+#campus { /* Donde lleva Enlace */
+  position: relative;
+  top: -64px;
+}
 
-#oncampus { /* Contenedor de On Campus */
+.oncampus { /* Contenedor de On Campus */
   display: flex;
   z-index: 1;
 }
@@ -260,7 +264,12 @@ nav { /* Navegador de la Página */
 
 /* ONLINE --------------------------------------------------------------------*/
 
-#online { /* Contenedor Principal */
+#online { /* Donde lleva el Enlace */
+  position: relative;
+  top: -64px;
+}
+
+.online { /* Contenedor Principal */
   display: inline-flex;
   flex-direction: column;
   background-color: hsl(0, 0%, 92%);
@@ -270,19 +279,14 @@ nav { /* Navegador de la Página */
   z-index: 1;
 }
 
-#online h1 { /* Titulo Principal */
+.online h1 { /* Titulo Principal */
   width: 100%;
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
-.cont1 { /* Contenedor 1 */
-  display: inline-flex;
-  margin-top: 32px;
-}
-
-.cont2 { /* Contenedor 2 */
+.cont1, .cont2 { /* Contenedor 1 y Contenedor 2*/
   display: inline-flex;
   margin-top: 32px;
 }
@@ -315,7 +319,7 @@ nav { /* Navegador de la Página */
   height: 100%;
 }
 
-.textcurso h1, .textcurso h2, .textcurso p {
+.textcurso h1, .textcurso h2, .textcurso p { /* Titulo, Subtitulo y Parrafo */
   display: flex;
   justify-content: flex-start;
 }
@@ -336,4 +340,131 @@ nav { /* Navegador de la Página */
   font-size: 14px;
   padding: 0;
   margin: 0;
+}
+
+/* FOR COMPANIES -------------------------------------------------------------*/
+
+#thesis { /* Contenedor principal */
+  display: inline-flex;
+  flex-direction: column;
+  color: hsl(0, 0%, 27%);
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 32px 0 0 0;
+  z-index: 1;
+}
+
+#thesis h1 { /* Titulo Principal */
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.Cvideoyenlaces { /* Contenedor de Contenedores de Video y Texto */
+  display: inline-flex;
+}
+
+.video { /* Contenedor Video y Texto*/
+  display: inline-flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 0;
+  margin: 32px 24px;
+}
+
+video { /* Video */
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.textvideo { /* Contenedor Texto debajo del video */
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.textvideo h1 { /* Titulo de Texto de Video */
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+.textvideo p { /* Parrafo de Texto de Video */
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  margin: 8px 0 0 0;
+}
+
+.enlaces2 { /* Contenedor Enlaces */
+  display: inline-flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 32px;
+}
+
+.fisma { /* Contenedor de Enlace 1 */
+  display: inline-flex;
+  background-color: hsl(0, 0%, 72%);
+}
+
+.now { /* Contendor de Enlace 2 */
+  display: inline-flex;
+}
+
+.enlaces2 img { /* Imagenes de los Enlaces */
+  width: 35%;
+  height: auto;
+  margin: 0;
+  padding: 16px;
+}
+
+.textenlaces2 { /* Contenedor del Texto de los Enlaces */
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.textenlaces2 h1 { /* Titulo de Enlaces */
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+.textenlaces2 p { /* Parrafo de Enlaces */
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  margin: 8px 0 0 0;
+}
+
+/* PIE DE PAGINA -------------------------------------------------------------*/
+
+footer { /* Contenedor de Pie de Pagina */
+  display: inline-flex;
+  justify-content: space-between;
+  border-top: 1px solid hsl(0, 0%, 72%);
+  color: hsl(0, 0%, 27%);
+  width: 100%;
+}
+
+.rights { /* Texto de Derechos de Pagina */
+  display: flex;
+  justify-content: flex-start;
+  margin: 16px 24px;
+}
+
+.privacy { /* Terminos y Privacidad */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 16px 24px;
+}
+
+footer a { /* Enlaces de Terminos y Privacidad */
+  text-decoration: none;
+  color: hsl(0, 0%, 27%);
+  padding-left: 24px;
 }
