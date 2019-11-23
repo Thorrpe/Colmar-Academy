@@ -4,10 +4,13 @@
 }
 
 body { /* Cuerpo */
+  box-sizing: border-box;
   position: relative;
   top: 64px;
   font-family: "ubuntu", Helvetica, sans-serif;
   background-color: white;
+  border-left: 1px solid hsl(0, 0%, 72%);
+  border-right: 1px solid hsl(0, 0%, 72%);
   margin: 0 300px;
   min-width: 768px;
 }
@@ -50,7 +53,7 @@ span { /* Texto: COLMAR */
   font-weight: 600;
 }
 
-img { /* Logo de Colmar */
+#img-colmar { /* Logo de Colmar */
   padding-top: 6px;
   margin-left: 24px;
   height: 90%;
@@ -66,10 +69,14 @@ nav { /* Navegador de la Página */
 
 .enlaces { /* Enlaces del Navegador */
   color: black;
-  text-decoration: none;
   padding: 0;
+  text-decoration: none;
   margin: 0 0 0 16px;
   font-size: 19px;
+}
+
+.enlaces img {
+  display: none;
 }
 
 .enlaces:hover {
@@ -163,14 +170,13 @@ nav { /* Navegador de la Página */
 
 .img { /* contenedor de Imagen */
   display: flex;
-  width: 100%;
+  margin: 32px 24px;
 }
 
 .b1 img { /* Imágen emanuel */
   width: 100%;
-  height: auto;
   padding: 0;
-  margin: 32px 24px;
+  height: auto;
 }
 
 #texto1 { /* Texto Emanuel */
@@ -355,7 +361,7 @@ nav { /* Navegador de la Página */
   z-index: 1;
 }
 
-#thesis h1 { /* Titulo Principal */
+#principal { /* Titulo Principal */
   text-align: center;
   width: 100%;
   padding: 0;
@@ -425,6 +431,7 @@ video { /* Video */
   flex-direction: column;
   justify-content: center;
   width: 65%;
+  padding: 16px 16px 16px 0;
 }
 
 .textenlaces2 h1 { /* Titulo de Enlaces */
@@ -467,4 +474,73 @@ footer a { /* Enlaces de Terminos y Privacidad */
   text-decoration: none;
   color: hsl(0, 0%, 27%);
   padding-left: 24px;
+}
+
+/* DISEÑO PARA MOVIL ---------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+
+body {
+  margin: 0;
+  min-width: none;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-width: none;
+}
+
+#img-colmar {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+nav {
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
+  margin: 0 24px;
+  padding: 0;
+}
+
+.enlaces {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px 4px 8px;
+  margin: 0;
+}
+
+.enlaces:hover {
+  background-color: white;
+}
+
+.enlaces p {
+  display: none;
+}
+
+.enlaces img {
+  display: block;
+  height: 130%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#ic-colmar {
+  padding: 8px 9px 2px 9px;
+}
+
+#ic-companies {
+  display: none;
+}
+
+#ic-sign {
+  padding-bottom: 2px;
+}
 }
