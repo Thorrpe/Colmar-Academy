@@ -293,7 +293,7 @@ nav { /* Navegador de la Página */
   z-index: 1;
 }
 
-.online h1 { /* Titulo Principal */
+.start { /* Titulo Principal */
   width: 100%;
   padding: 0;
   margin: 0;
@@ -333,7 +333,7 @@ nav { /* Navegador de la Página */
   height: 100%;
 }
 
-.textcurso h1, .textcurso h2, .textcurso p { /* Titulo, Subtitulo y Parrafo */
+.textcurso h1, #courses, .textcurso p { /* Titulo, Subtitulo y Parrafo */
   display: flex;
   justify-content: flex-start;
 }
@@ -659,5 +659,43 @@ footer a { /* Enlaces de Terminos y Privacidad */
   #texto2 a {
     font-size: 30px;
   }
+
+/* ONLINE */
+
+  .online {
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .online h1 {
+    margin: 32px 16px 16px 16px;
+  }
+
+  .cont1 {
+    flex-direction: column;
+    margin: 16px 0 0 0;
+  }
+
+  .cont2 {
+    flex-direction: column;
+  }
+
+  .cursos {
+  }
+
+  .cursos img {
+    display: none;
+  }
+
+  .textcurso p, #courses {
+    display: none;
+  }
+
+  .textcurso h1 {
+    background-color: hsl(0, 0%, 72%);
+  }
+
 
   }
