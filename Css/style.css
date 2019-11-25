@@ -226,6 +226,10 @@ nav { /* Navegador de la Página */
   padding: 16px;
 }
 
+.readmore #img-mobile {
+  display: none;
+}
+
 #uno { /* Apartado 1 */
   border-bottom: 1px solid hsl(0, 0%, 72%);
 }
@@ -246,6 +250,10 @@ nav { /* Navegador de la Página */
   width: 65%;
   color: hsl(0, 0%, 27%);
   margin-left: 32px;
+}
+
+.special {
+  display: none;
 }
 
 #texto2 h1 { /* Titulo texto2 */
@@ -480,67 +488,176 @@ footer a { /* Enlaces de Terminos y Privacidad */
 
 @media only screen and (max-width: 480px) {
 
-body {
-  margin: 0;
-  min-width: none;
-}
+  body {
+    margin: 0;
+    min-width: none;
+  }
 
-header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  width: 100%;
-  min-width: none;
-}
+  /* ENCABEZADO */
 
-#img-colmar {
-  display: none;
-}
+  header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-width: none;
+  }
 
-.logo {
-  display: none;
-}
+  #img-colmar {
+    display: none;
+  }
 
-nav {
-  justify-content: space-around;
-  height: auto;
-  width: 100%;
-  margin: 0 24px;
-  padding: 0;
-}
+  .logo {
+    display: none;
+  }
 
-.enlaces {
-  display: flex;
-  align-items: center;
-  padding: 10px 8px 4px 8px;
-  margin: 0;
-}
+  nav {
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    margin: 0 24px;
+    padding: 0;
+  }
 
-.enlaces:hover {
-  background-color: white;
-}
+  .enlaces {
+    display: flex;
+    align-items: center;
+    padding: 10px 8px 4px 8px;
+    margin: 0;
+  }
 
-.enlaces p {
-  display: none;
-}
+  .enlaces:hover {
+    background-color: white;
+  }
 
-.enlaces img {
-  display: block;
-  height: 130%;
-  width: auto;
-  margin: 0;
-  padding: 0;
-}
+  .enlaces p {
+    display: none;
+  }
 
-#ic-colmar {
-  padding: 8px 9px 2px 9px;
-}
+  .enlaces img {
+    display: block;
+    height: 130%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
 
-#ic-companies {
-  display: none;
-}
+  #ic-colmar {
+    padding: 8px 9px 2px 9px;
+  }
 
-#ic-sign {
-  padding-bottom: 2px;
-}
-}
+  #ic-companies {
+    display: none;
+  }
+
+  #ic-sign {
+    padding-bottom: 2px;
+  }
+
+  /* APRENDIZAJE */
+
+  .learn {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .learn img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bottom {
+    width: auto;
+    margin: 32px 16px;
+    padding: 0;
+  }
+  .bottom h1 {
+    font-size: 50px;
+    padding: 0 0 32px 0;
+  }
+
+  .bottom h3 {
+    font-size: 30px;
+    padding: 0 0 24px 0;
+  }
+
+  .boton {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  /* ON CAMPUS */
+
+  .oncampus {
+    justify-content: center;
+    border-bottom: 2px solid hsl(0, 0%, 72%);  }
+
+  .b1 {
+    display: none;
+  }
+
+  .b2 {
+    border: none;
+    width: 100%;
+    margin: 16px 16px 32px 16px;
+  }
+
+  .b2 img {
+    display: none;
+    width: 100%;
+    min-width: none;
+    max-height: none;
+  }
+
+  .readmore {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  #uno {
+    border: none;
+    margin-bottom: 64px;
+  }
+
+  #dos {
+    border: none;
+    margin-bottom: 64px;
+  }
+
+  #Oliver {
+    background-color: white;
+  }
+
+  .readmore #img-mobile {
+    display: flex;
+  }
+
+  #texto2 {
+    width: auto;
+    margin: 0;
+    padding: 32px 16px 0 16px;
+  }
+
+  .normal {
+    display: none;
+  }
+
+  .special {
+    display: flex;
+  }
+
+  #texto2 h1 {
+    font-size: 50px;
+  }
+
+  #texto2 p {
+    font-size: 30px;
+  }
+
+  #texto2 a {
+    font-size: 30px;
+  }
+
+  }
