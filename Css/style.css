@@ -716,5 +716,34 @@ footer a { /* Enlaces de Terminos y Privacidad */
     font-size: 40px;
   }
 
+/* FOR COMPANIES */
+
+  #thesis {
+    margin: 0;
+  }
+
+  #principal {
+    font-size: 50px;
+    margin: 32px 0 16px 0;
+  }
+
+  .enlaces2 {
+    display: none;
+  }
+
+  .textvideo {
+    display: none;
+  }
+
+  .video {
+    width: 100%;
+    margin: 0;
+  }
+
+/* PIE DE PAGINA */
+
+  .privacy {
+    display: none;
+  }
 
   }
